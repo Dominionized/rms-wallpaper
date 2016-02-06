@@ -34,8 +34,7 @@
             "org.gnome.desktop.background"
             "picture-uri"
             (format "file://%s"
-                    (.getAbsolutePath file)))
-  )
+                    (.getAbsolutePath file))))
 
 (defn -main
   "I don't do a whole lot ... yet."
