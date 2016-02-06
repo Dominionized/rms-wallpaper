@@ -45,4 +45,4 @@
         (get-image-from-url)
         (write-image file)
         (set-gnome-wallpaper)))
-  nil)
+  (System/exit 0))
