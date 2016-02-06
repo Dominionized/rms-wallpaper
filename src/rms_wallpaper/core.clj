@@ -29,16 +29,12 @@
 
 (defn set-gnome-wallpaper
   [file]
- ;; (shell/sh "gsettings"
-  ;;          "set org.gnome.desktop.background draw-background false")
   (shell/sh "gsettings"
             "set"
             "org.gnome.desktop.background"
             "picture-uri"
             (format "file://%s"
                     (.getAbsolutePath file)))
-  ;;(shell/sh "gsettings"
-  ;;         "set org.gnome.desktop.background draw-background true")
   )
 
 (defn -main
